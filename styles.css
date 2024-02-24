@@ -1,9 +1,15 @@
 body{
     background-color: #1C1C1C;
-    color: white;
+    background-blend-mode: multiply;
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 section{
+    
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 25px;
@@ -14,7 +20,28 @@ p{
 }
 
 nav{
-    height: 100px;
+    height: 50px;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: #36014C;
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media(min-aspect-ratio: 16/9) {
+    .background-vid {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    .background-vid {
+        width: auto;
+        height: 100%;
+    }
 }
 
 .nav-item{
@@ -41,7 +68,7 @@ nav{
 }
 .card-body{
     color: white;
-    background-color: #4F0470;
+    background-color:#260235;
 }
 
 .card-header{
@@ -50,12 +77,13 @@ nav{
 
 .card-header:hover {
     background-color: #36014C;
-    color: blue;
+    color: rgb(12, 12, 39);
     transition: all 0.2s ease;
 }
 
 .nav-item:hover{
-    background-color: #120730;
+    background-color: #43095c;
+    color:#0C0225
 }
 
 .dropdown-item:hover{
@@ -63,25 +91,36 @@ nav{
 }
 
 .carousel{
+    width: 500px;
+    height: 500px;
     padding-top: 70px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 .img-fluid{
-    max-height: 90%;
-    max-width: 90%;
-    min-height: 80%;
-    min-width: 80%
+    width: auto;
+    height: auto;
 }
 
-#beachVideo {
-    position: fixed;
+.carousel-item{
+    width: 500px;
+    height: 500px;
+}
+
+
+.background-vid {
+    position: absolute;
     right: 0;
     bottom: 0;
+    /* puts it in the background */
+    z-index: -1;
     min-width: 100%;
-    min height: 100%;
+    min-height: 100%;
+    opacity: 0.8;
+
 }
+
 
 .carousel-control-next{
     padding-top: 10%;
@@ -97,3 +136,5 @@ nav{
     position: absolute;
     top: 50%
 }
+
+
