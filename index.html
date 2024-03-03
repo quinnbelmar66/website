@@ -22,6 +22,9 @@
 
     <!-- CSS styles -->
     <link href="styles.css" rel="stylesheet">
+
+    <!-- Javascript-->
+    <script src="scripts.js" ></script>
   </head>
   <body>
 
@@ -49,7 +52,7 @@
 
           <!-- Sidebar body-->
           <div class="offcanvas-body d-flex">
-            <ul class="navbar-nav justify-content-end align-items-center fs-5 flex-grow-1 pe-3">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
               <li class="nav-item mx-2">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
@@ -82,12 +85,12 @@
               <div class="card-body text-center">
                 <h2 class="card-header mb-3">Hungry Hungry Hippos Robot</h2>
                 <p class="card-text">
-                  Currently designing and building a robot to collect balls as part of a project in TURTLE (Texas A&M University Robotics Team and Leadership Experience).
-                  So far, I have been designing parts on solidworks and prototyping with a 3D printer.
+                  Currently designing and building a robot to collect balls as part of a project in TURTLE (Texas A&M University Robotics Team and Leadership Experience).<span id="robotdots">..</span>
+                  <span id="morerobot"> So far, I have been designing parts on solidworks and prototyping with a 3D printer. </span>
                 </p>
-<!--               Doesnt work yet
-                <a href="#" class="btn btn-dark">Read More</a> 
-                 -->
+
+                <button onclick="moreFunction('robotdots', 'morerobot', 'robotreadmore')" class="btn btn-dark" id="robotreadmore">Read More</button> 
+                
               </div>
             </div>
           </div>
