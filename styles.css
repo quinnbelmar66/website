@@ -22,6 +22,10 @@ p{
 }
 
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
     height: 50px;
 }
 
@@ -105,21 +109,23 @@ nav{
     height: auto;
 }
 
-.carousel-item{
-    width: 500px;
-    height: 500px;
+.carousel-item img {
+    object-fit: cover;
+    height: 400px;
 }
 
 
 .background-vid {
-    position: absolute;
+    position: fixed;
+    top: 50px;
     right: 0;
     bottom: 0;
-    /* puts it in the background */
     z-index: -1;
     min-width: 100%;
     min-height: 100%;
     opacity: 0.8;
+    object-fit: cover;
+    object-position: top;
 
 }
 
